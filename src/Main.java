@@ -1,12 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int salary = 0;
+        int salary = 15000;
         int month = 0;
-        while (salary <= 2_459_000) {
-            salary = salary + 15000;
+        int total2 = 0;
+        while (total2 <= 2_459_000) {
+            total2 = total2 + total2 / 100;
+            total2 = total2 + salary;
             int months = month++;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + total2 + " рублей");
         }
-        System.out.println("Месяц " + month + " сумма накоплений равна " + salary + " рублей");
         System.out.println();
 
         int i = 1;
@@ -43,12 +45,12 @@ public class Main {
         System.out.println();
 
         money = 15000;
-        months = 0;
+        int monthsTask6 = 0;
         while (money < 12000000) {
             money = money + money / 100 * 7;
-            months++;
+            monthsTask6++;
             if (months % 6 == 0)
-            System.out.println(months + " месяцев " + money + " рублей");
+            System.out.println(monthsTask6 + " месяцев " + money + " рублей");
         }
         System.out.println();
 
